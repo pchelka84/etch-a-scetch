@@ -33,8 +33,9 @@ h1 {
 }
 
 .scetch-container {
-  width: 430px;
-  height: 430px;
+  display: grid;
+  max-width: 430px;
+  max-height: 430px;
   border: 1px dotted rgba(0, 0, 0, 0.2);
   margin: 20px auto;
   padding: 1px;
