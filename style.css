@@ -34,8 +34,9 @@ h1 {
 
 .scetch-container {
   display: grid;
-  max-width: 430px;
-  max-height: 430px;
+  grid-template-columns: repeat(10, 1fr);
+  width: 430px;
+  height: 430px;
   border: 1px dotted rgba(0, 0, 0, 0.2);
   margin: 20px auto;
   padding: 1px;
@@ -67,9 +68,8 @@ button:active {
 }
 
 .pixel {
-  width: 20px;
-  height: 20px;
   border: 1px dotted rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 221, 221, 0.3);
 }
 
 @media (max-width: 500px) {
