@@ -10,19 +10,15 @@ function setGrid(size) {
    const pixel = document.createElement('div');
    pixel.classList = 'pixel';
 
+   scetchGrid.appendChild(pixel);
+
    // Change pixel color on hover
    pixel.addEventListener('mouseover', changePixelColor);
-   scetchGrid.appendChild(pixel);
- }
+  }
 }
 
 // Change grid size
 function changeGridSize(size) {
-
-}
-
-// Clear grid 
-function clearGrid() {
 
 }
 
