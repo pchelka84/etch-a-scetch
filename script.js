@@ -17,6 +17,14 @@ function setGrid(size) {
   }
 }
 
+// Clear grid 
+function clearGrid() { 
+  const numberOfPixels = Math.sqrt(scetchGrid.childElementCount);
+  scetchGrid.innerHTML = '' 
+  setGrid(numberOfPixels);
+}
+
+
 // Change grid size
 function changeGridSize(size) {
 
