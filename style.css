@@ -133,10 +133,23 @@ input:focus {
 input:active {
   border: 1px solid rgba(243, 182, 182, 1);
 }
+
 label {
   font-size: 0.7rem;
   text-align: left;
   color: #777;
+}
+
+@media (max-width: 950px) {
+  .message-box-content {
+    width: 65%;
+  }
+}
+
+@media (max-width: 750px) {
+  .message-box-content {
+    width: 75%;
+  }
 }
 
 @media (max-width: 500px) {
@@ -149,6 +162,7 @@ label {
     padding: 1.5rem auto;
     font-size: 1rem;
   }
+
   button {
     padding: 8px 13px;
     margin: 0 15px;
@@ -157,16 +171,15 @@ label {
   .message-box-content {
     width: 85%;
   }
-}
 
-@media (max-width: 750px) {
-  .message-box-content {
-    width: 75%;
+  #form {
+    display: flex;
+    flex-direction: column;
   }
-}
 
-@media (max-width: 950px) {
-  .message-box-content {
-    width: 55%;
+  input,
+  button {
+    width: 100%;
+    margin: 10px auto;
   }
 }
