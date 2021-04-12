@@ -41,7 +41,7 @@ function openMessageBox() {
 
 // Show error when user input incorrect
 function showError() {
-  message.innerHTML = "Please enter a number from 1 to 100!";
+  message.innerHTML = "Please enter a number from 1 to 50!";
 }
 
 // Sumbit new size
@@ -50,12 +50,12 @@ function submitNewSize(e) {
 
   let size = parseInt(input.value);
 
-  if (isNaN(size) || size < 1 || size > 100) {
+  if (isNaN(size) || size < 1 || size > 50) {
     showError();
   } else { 
     size = parseInt(input.value); 
     
-    message.innerHTML = "Enter a number from 1 to 100" 
+    message.innerHTML = "Enter a number from 1 to 50" 
     messageBox.style.display = 'none';
 
     setGrid(size);  
